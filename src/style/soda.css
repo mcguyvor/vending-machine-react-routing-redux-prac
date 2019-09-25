@@ -1,0 +1,41 @@
+.flex-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center
+}
+.soda{
+    display: flex;
+    height : 400px;
+    width: 100vw;
+    justify-content: space-around;
+}
+.soda-img{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.message{
+    width: 30%;
+    color:white;
+    background-color: rgb(80, 80, 79,0.9);
+    border-radius: 29px 29px 29px 29px;
+    text-align: center;
+    padding: 30px;
+}
+Link:hover{
+    font-size: 2 em;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.message a.chosen,
+.message a:hover {
+  border-bottom: 1px solid #F14B31;
+}
